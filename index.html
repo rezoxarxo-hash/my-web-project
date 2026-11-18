@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    
+    <link href="https://googleapis.com" rel="stylesheet">
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFFDF0] text-[#333333] min-h-screen flex flex-col m-0 p-0 box-border" style="font-family: 'Fredoka', cursive, sans-serif;">
+
+   
+    <header class="bg-[#BAE6FD] border-b-[3px] border-[#0284C7] px-[30px] py-[15px] flex justify-between items-center">
+        <h1 class="text-[24px] font-bold text-[#0369A1]">Music Playlist</h1>
+        <nav class="flex">
+            <a href="#home" class="no-underline text-[#0369A1] font-semibold text-[18px] ml-[15px] px-[14px] py-[6px] rounded-[12px] bg-white border-2 border-[#0284C7] transition duration-200 hover:bg-[#FEF08A] hover:text-[#854D0E] hover:border-[#CA8A04]">Home</a>
+            <a href="#contact" class="no-underline text-[#0369A1] font-semibold text-[18px] ml-[15px] px-[14px] py-[6px] rounded-[12px] bg-white border-2 border-[#0284C7] transition duration-200 hover:bg-[#FEF08A] hover:text-[#854D0E] hover:border-[#CA8A04]">Contact</a>
+        </nav>
+    </header>
+
+   
+    <div id="home" class="max-w-[1100px] w-full my-[30px] mx-auto px-[20px] grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-[25px] flex-1">
+        
+       
+        <div class="bg-white border-[3px] border-[#E2E8F0] rounded-[20px] p-[15px] shadow-[4px_4px_0px_#CBD5E1]">
+            <div class="relative w-full pb-[56.25%] h-0 rounded-[12px] overflow-hidden bg-black">
+                <iframe name="video-frame" src="https://youtube.com" allowfullscreen class="absolute top-0 left-0 w-full h-full border-none"></iframe>
+            </div>
+            <h2 class="mt-[15px] text-[20px] font-semibold text-[#1E293B]">Lofi Hip Hop Radio - Beats to Relax/Study to</h2>
+        </div>
+
+      
+        <div class="bg-[#BBF7D0] border-[3px] border-[#22C55E] rounded-[20px] p-[15px] shadow-[4px_4px_0px_#86EFAC] h-fit">
+            <h2 class="text-[18px] font-bold text-[#15803D] mb-[12px]">Up Next</h2>
+
+           
+            <a href="https://youtube.com?autoplay=1" target="video-frame" class="flex items-center gap-[12px] bg-white border-2 border-[#86EFAC] rounded-[12px] p-[8px] mb-[10px] text-inherit no-underline transition duration-150 hover:-translate-y-0.5 hover:bg-[#FEF9C3] hover:border-[#EAB308]">
+                <img src="https://youtube.com" alt="Thumbnail" class="w-[80px] h-[50px] object-cover rounded-[8px]">
+                <div>
+                    <h3 class="text-[14px] font-semibold text-[#1E293B]">Lofi Chill Beats</h3>
+                    <p class="text-[12px] text-[#64748B]">Lofi Girl</p>
+                </div>
+            </a>
+
+           
+            <a href="https://youtube.com" target="video-frame" class="flex items-center gap-[12px] bg-white border-2 border-[#86EFAC] rounded-[12px] p-[8px] mb-[10px] text-inherit no-underline transition duration-150 hover:-translate-y-0.5 hover:bg-[#FEF9C3] hover:border-[#EAB308]">
+                <img src="https://youtube.com" alt="Thumbnail" class="w-[80px] h-[50px] object-cover rounded-[8px]">
+                <div>
+                    <h3 class="text-[14px] font-semibold text-[#1E293B]">Synthwave Retro</h3>
+                    <p class="text-[12px] text-[#64748B]">Lofi Girl - Synthwave</p>
+                </div>
+            </a>
+
+            
+            <a href="https://youtube.com" target="video-frame" class="flex items-center gap-[12px] bg-white border-2 border-[#86EFAC] rounded-[12px] p-[8px] mb-[10px] text-inherit no-underline transition duration-150 hover:-translate-y-0.5 hover:bg-[#FEF9C3] hover:border-[#EAB308]">
+                <img src="https://youtube.com" alt="Thumbnail" class="w-[80px] h-[50px] object-cover rounded-[8px]">
+                <div>
+                    <h3 class="text-[14px] font-semibold text-[#1E293B]">Cozy Study Beats</h3>
+                    <p class="text-[12px] text-[#64748B]">ChilledCow Classics</p>
+                </div>
+            </a>
+
+            
+            <a href="https://youtube.com" target="video-frame" class="flex items-center gap-[12px] bg-white border-2 border-[#86EFAC] rounded-[12px] p-[8px] mb-[10px] text-inherit no-underline transition duration-150 hover:-translate-y-0.5 hover:bg-[#FEF9C3] hover:border-[#EAB308]">
+                <img src="https://youtube.com" alt="Thumbnail" class="w-[80px] h-[50px] object-cover rounded-[8px]">
+                <div>
+                    <h3 class="text-[14px] font-semibold text-[#1E293B]">Peaceful Piano</h3>
+                    <p class="text-[12px] text-[#64748B]">Relaxing Music</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+   
+    <footer id="contact" class="text-center p-[20px] text-[14px] text-[#64748B]">
+        <p>Contact: myplaylist@example.com | Made with HTML & Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>
